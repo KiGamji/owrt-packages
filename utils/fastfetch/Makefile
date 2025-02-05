@@ -30,8 +30,8 @@ define Package/fastfetch/description
 endef
 
 define Package/fastfetch/install
-    $(INSTALL_DIR) $(1)/usr/bin
-    $(INSTALL_BIN) $(PKG_BUILD_DIR)/fastfetch $(1)/usr/bin/
+	$(INSTALL_DIR) $(1)/usr/bin
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/fastfetch $(1)/usr/bin/
 endef
 
 $(eval $(call BuildPackage,fastfetch))
